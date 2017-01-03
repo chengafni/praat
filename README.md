@@ -9,13 +9,15 @@ List of plugins:
 * Download: plugin_SpectralEmphasis.zip
 * Calculates the intensity (in dB) contained in the high-frequency band of a sound signal. This is accomplished by low-pass filtering the sound signal and calculating the intensity lost in the process (See: Traunmüller and Eriksson, 2000). This measure is used in voice quality analysis.
 * The plugin adds the command *Get spectral emphasis* to the following menus: 
-    in the Objects window, it is added at the bottom of the *Query* menu for Sound objects.
-    In the Sound and TextGrid editors, it is added at the bottom of the *Spectrum* menu.
+    * in the Objects window, it is added at the bottom of the *Query* menu for Sound objects.
+    * In the Sound and TextGrid editors, it is added at the bottom of the *Spectrum* menu.
 
 ## 2) Mean Intensity slope
 * Download: plugin_IntensitySlope.zip
 * Calculates the mean slope of the intensity curve (in dB/s).
-* Two methods: (1) raw: the direction of local changes in the intensity curve is taken into account; (2) aboslute: the direction of local changes in the intensity curve is disregarded.
+* Two methods: 
+    1. raw: the direction of local changes in the intensity curve is taken into account; 
+    2. aboslute: the direction of local changes in the intensity curve is disregarded.
 * The plugin adds the command *Get mean slope* to the following menus: 
-    in the Objects window, it is added at the bottom of the *Query* menu for Intensity objects.
-    In the Sound and TextGrid editors, it is added at the bottom of the *Intensity* menu.
+   * in the Objects window, it is added at the bottom of the *Query* menu for Intensity objects.
+   * In the Sound and TextGrid editors, it is added at the bottom of the *Intensity* menu.
