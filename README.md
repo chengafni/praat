@@ -5,7 +5,7 @@
 * Once a plugin folder is placed in Praat's preference folder, starting Praat will automatically add the functions included in the plugin to the appropriate menus of Praat.
 
 List of plugins:
-## 1) Spectral emphasis: 
+## 1) Spectral emphasis 
 * Download: plugin_SpectralEmphasis.zip
 * Calculates the intensity (in dB) contained in the high-frequency band of a sound signal. This is accomplished by low-pass filtering the sound signal and calculating the intensity lost in the process (See: Traunmüller and Eriksson, 2000). This measure is used in voice quality analysis.
 * The plugin adds the command *Get spectral emphasis* to the following menus: 
