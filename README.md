@@ -29,8 +29,24 @@ List of plugins:
 * The plugin adds the command *Get peak latency* to the following menus: 
     * Objects window: after the command *Get time of maximum...* in the *Query* menu for Pitch objects.
     * Sound and TextGrid editors: at the bottom of the *Pitch* menu.
-    
-## 4) Complete analysis
+
+## 4) Hammarberg index
+* Download: plugin_HammarbergIndex.zip
+* Calculate the Hammarberg index of the Ltas object.
+* Hammarberg index (see: Hammarberg et al., 1980) = the difference between the maximum of the LTAS curve in the range 0-2000 Hz and the LTAS curve in the range 2000-5000 Hz.
+* The plugin adds the command *Get Hammarberg index* at the bottom of the *Query* menu for Ltas objects.
+
+## 5) High-to-Low spectral band energies
+* Download: plugin_HL.zip.
+* Calculate energy ratio between high and low frequency bands (H/L).
+* The plugin adds the command *Get H/L* after the command *Get band density difference...* in the *Query* menu for Spectrum objects.
+
+## 6) Peak-to-average ratio
+* Download: plugin_PA.zip.
+* Calculate Peak-to-Average (P/A) ratio of sound amplitude (see: Hillenbrand et al., 1994).
+* The plugin adds the command *Get peak to average ratio* after the command *Get standard deviation...* in the *Query* menu for Sound objects.
+
+## 7) Complete analysis
 * Download: plugin_CompleteAnalysis.zip
 * An extensive acoustic analysis of Sound objects in the Sound editor (non-annotated sounds) or TextGrid editor (annotated sounds) of Praat.
 
