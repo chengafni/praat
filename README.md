@@ -22,7 +22,15 @@ List of plugins:
    * Objects window: at the bottom of the *Query* menu for Intensity objects.
    * Sound and TextGrid editors: at the bottom of the *Intensity* menu.
 
-## 3) Complete analysis
+## 3) Pitch peak latency
+* Download: plugin_PitchPeakLatency.zip.
+* Calculate the peak latency of the Pitch contour. 
+* Peak latency: the time interval between the start of the interval and the point of maximum pitch, divided by the duration of the interval (0.5 = pitch maximum is mid-interval).
+* The plugin adds the command *Get peak latency* to the following menus: 
+    * Objects window: after the command *Get time of maximum...* in the *Query* menu for Pitch objects.
+    * Sound and TextGrid editors: at the bottom of the *Pitch* menu.
+    
+## 4) Complete analysis
 * Download: plugin_CompleteAnalysis.zip
 * An extensive acoustic analysis of Sound objects in the Sound editor (non-annotated sounds) or TextGrid editor (annotated sounds) of Praat.
 
