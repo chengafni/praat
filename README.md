@@ -3,16 +3,27 @@
 * This repository contains some plugins for Praat. Each plugin adds functions to Praat's menus.
 * To install a plugin, download its zip file and unzip it in your Praat's preference folder. If you don't know where Praat's preference folder is located, download *praatPrefDir.praat* and run it in Praat: on the *Praat* menu select *Open Praat script...*, select *praatPrefDir.praat* and click *Run* in the *Run* menu.
 * Once a plugin folder is placed in Praat's preference folder, starting Praat will automatically add the functions included in the plugin to the appropriate menus of Praat.
+* There are several types of plugins in the repository: (1) "Align intervals" adds content to a TextGrid object, (2) several other plugins measure certain acoustic parameters, and (3) "Complete analysis" (the last plugin on the list) is a "super-program" that automatically measures any number of selected acoustic parameters on complete Sound and TextGrid objects.
 
 List of plugins:
-## 1) Spectral emphasis 
-* Download: plugin_SpectralEmphasis.zip
-* Calculates the intensity (in dB) contained in the high-frequency band of a sound signal. This is accomplished by low-pass filtering the sound signal and calculating the intensity lost in the process (See: Traunmüller and Eriksson, 2000). This measure is used in voice quality analysis.
-* The plugin adds the command *Get spectral emphasis* to the following menus: 
-    * Objects window: at the bottom of the *Query* menu for Sound objects.
-    * Sound and TextGrid editors: at the bottom of the *Spectrum* menu.
+## 1) Align intervals
+* Download: plugin_AlignIntervals.zip
+* Aligns all intervals on a selected TextGrid tier.
+* The plugin adds the command *Align all intervals* to the Interval menu of the TextGrid editor.
+* Put cursor in the tier of interest and invoke the *Align all intervals* command. 
 
-## 2) Mean Intensity slope
+## 2) High-to-Low spectral band energies
+* Download: plugin_HL.zip.
+* Calculate energy ratio between high and low frequency bands (H/L).
+* The plugin adds the command *Get H/L* after the command *Get band density difference...* in the *Query* menu for Spectrum objects.
+
+## 3) Hammarberg index
+* Download: plugin_HammarbergIndex.zip
+* Calculate the Hammarberg index of the Ltas object.
+* Hammarberg index (see: Hammarberg et al., 1980) = the difference between the maximum of the LTAS curve in the range 0-2000 Hz and the LTAS curve in the range 2000-5000 Hz.
+* The plugin adds the command *Get Hammarberg index* at the bottom of the *Query* menu for Ltas objects.
+
+## 4) Mean Intensity slope
 * Download: plugin_IntensitySlope.zip
 * Calculates the mean slope of the intensity curve (in dB/s).
 * Two methods: 
@@ -22,7 +33,12 @@ List of plugins:
    * Objects window: at the bottom of the *Query* menu for Intensity objects.
    * Sound and TextGrid editors: at the bottom of the *Intensity* menu.
 
-## 3) Pitch peak latency
+## 5) Peak-to-average ratio
+* Download: plugin_PA.zip.
+* Calculate Peak-to-Average (P/A) ratio of sound amplitude (see: Hillenbrand et al., 1994).
+* The plugin adds the command *Get peak to average ratio* after the command *Get standard deviation...* in the *Query* menu for Sound objects.
+
+## 6) Pitch peak latency
 * Download: plugin_PitchPeakLatency.zip.
 * Calculate the peak latency of the Pitch contour. 
 * Peak latency: the time interval between the start of the interval and the point of maximum pitch, divided by the duration of the interval (0.5 = pitch maximum is mid-interval).
@@ -30,23 +46,14 @@ List of plugins:
     * Objects window: after the command *Get time of maximum...* in the *Query* menu for Pitch objects.
     * Sound and TextGrid editors: at the bottom of the *Pitch* menu.
 
-## 4) Hammarberg index
-* Download: plugin_HammarbergIndex.zip
-* Calculate the Hammarberg index of the Ltas object.
-* Hammarberg index (see: Hammarberg et al., 1980) = the difference between the maximum of the LTAS curve in the range 0-2000 Hz and the LTAS curve in the range 2000-5000 Hz.
-* The plugin adds the command *Get Hammarberg index* at the bottom of the *Query* menu for Ltas objects.
+## 7) Spectral emphasis 
+* Download: plugin_SpectralEmphasis.zip
+* Calculates the intensity (in dB) contained in the high-frequency band of a sound signal. This is accomplished by low-pass filtering the sound signal and calculating the intensity lost in the process (See: Traunmüller and Eriksson, 2000). This measure is used in voice quality analysis.
+* The plugin adds the command *Get spectral emphasis* to the following menus: 
+    * Objects window: at the bottom of the *Query* menu for Sound objects.
+    * Sound and TextGrid editors: at the bottom of the *Spectrum* menu.
 
-## 5) High-to-Low spectral band energies
-* Download: plugin_HL.zip.
-* Calculate energy ratio between high and low frequency bands (H/L).
-* The plugin adds the command *Get H/L* after the command *Get band density difference...* in the *Query* menu for Spectrum objects.
-
-## 6) Peak-to-average ratio
-* Download: plugin_PA.zip.
-* Calculate Peak-to-Average (P/A) ratio of sound amplitude (see: Hillenbrand et al., 1994).
-* The plugin adds the command *Get peak to average ratio* after the command *Get standard deviation...* in the *Query* menu for Sound objects.
-
-## 7) Complete analysis
+## 8) Complete analysis
 * Download: plugin_CompleteAnalysis.zip
 * An extensive acoustic analysis of Sound objects in the Sound editor (non-annotated sounds) or TextGrid editor (annotated sounds) of Praat.
 
