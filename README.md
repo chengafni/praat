@@ -71,7 +71,7 @@ List of plugins:
 * The above mentioned text files are distributed alongside the script, as part of the plugin. They can be edited freely (e.g., adding/removing commands, changing the input arguments of commands). The plugin also contains an Excel file named "Sound editor tables.xls", which contains these tables as separate sheets. This provides an easy way to edit the tables (after editing the file, the modified table should be saved as a Tab-delimited text file).
 
 ### Usage
-* Select a part of the sound (e.g., some interval in a tier of interest, and run the script.
+* Select a part of the sound (e.g., some interval in a tier of interest), and run the script.
 * You'll be presented with several dialog boxes:
 1. Type of analysis: contains the following checkboxes:
    - "automatic": analyze all intervals in the selected tier. If unchecked, only the selected interval will be analyzed.
