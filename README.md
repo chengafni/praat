@@ -3,6 +3,7 @@
 * This repository contains some plugins for Praat. Each plugin adds functions to Praat's menus.
 * To install a plugin, download its zip file and unzip it in your Praat's preference folder. If you don't know where Praat's preference folder is located, download *praatPrefDir.praat* and run it in Praat: on the *Praat* menu select *Open Praat script...*, select *praatPrefDir.praat* and click *Run* in the *Run* menu.
 * Once a plugin folder is placed in Praat's preference folder, starting Praat will automatically add the functions included in the plugin to the appropriate menus of Praat.
+* If you do not wish to install the plugins, you can simply open the scripts in Praat when needed and run them. Some plugins contain two scripts: the script whose name contains the word "Editor" operates inside the Sound editor; the other script operates on an object (e.g., intensity object) in the objects window.
 * There are several types of plugins in the repository: (1) "Align intervals" adds content to a TextGrid object, (2) several other plugins measure certain acoustic parameters, and (3) "Complete analysis" (the last plugin on the list) is a "super-program" that automatically measures any number of selected acoustic parameters on complete Sound and TextGrid objects.
 
 List of plugins:
