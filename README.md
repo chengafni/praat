@@ -59,7 +59,13 @@ List of plugins:
     * Objects window: at the bottom of the *Query* menu for Sound objects.
     * Sound and TextGrid editors: at the bottom of the *Spectrum* menu.
 
-## 9) Complete analysis
+## 9) Label words
+* Download: plugin_LabelWords.zip
+* Annotates a sound object according to a list of labels.
+* The list of labels should be stored in a tab-separated text file. To use the script, select a sound object in Praat's objects window and run the script. On first run, you will be asked to select the file labels from the disk. The script is designed to handle cases in which the number of recorded sections is larger than the number of labels due to multiple repetitions of words. In such cases, the script will halt and display an error message when the list of labels has been exhausted. To resume the annotation, find the number of the first mislabeled TextGrid interval and the number of the first misidentified label. Then, re-run the script, un-check the "first attempt" check box and replace the values of "start interval" and "start word" with the values you wish to continue from.
+* The plugin adds the command *Label words* after the command *To TextGrid (silences)...* in the *Annotate* menu for Sound objects.
+
+## 10) Complete analysis
 * Download: plugin_CompleteAnalysis.zip
 * An extensive acoustic analysis of Sound objects in the Sound editor (non-annotated sounds) or TextGrid editor (annotated sounds) of Praat.
 
