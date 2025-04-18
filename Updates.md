@@ -1,6 +1,6 @@
 # Plugins for Praat: updates
 ## April 2025
-* Fixed bugs in Complete analysis
+* Fixed bugs in Complete analysis.
 
 ## January 2024
 * Updated setups of plugins for: Formant transitions, Spectral emphasis, and Complete analysis, due to changes of names of Praat's menus. 
